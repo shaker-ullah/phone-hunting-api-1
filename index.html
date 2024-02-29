@@ -12,17 +12,26 @@
 
 <body>
     <header>
-        <h2 class="text-5xl text-center font bold">Hunting Phone</h2>
+        <h2 class="text-5xl text-center font bold"> Phone Market</h2>
     </header>
     <main>
         <section class="my-6">
-            <input id="search-input" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-            <button onclick="handleSearch()" class="btn btn-secondry">Search</button>
+            <div class="flex justify-center">
+                <div class="block">
+                    <input id="search-input" type="text" placeholder="Type here"
+                        class="input input-bordered w-full max-w-xs" />
+                    <button onclick="handleSearch()" class="btn btn-secondry">Search</button>
+                </div>
+            </div>
         </section>
         <section class="container mx-auto">
 
-            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8">
 
+            </div>
+            <div class="flex justify-center my-8">
+                <button onclick="handleShowAll()" id="show-all-container"
+                    class="btn btn-outline btn-primary hidden">Primary</button>
             </div>
         </section>
     </main>
